@@ -1,0 +1,37 @@
+{
+  "name": "node-server-zh",
+  "version": "0.0.1-beta.1",
+  "private": false,
+  "scripts": {
+    "start": "node ./src/server.js",
+    "build": "webpack"
+  },
+  "bin": {
+    "aifp": "./lib/server.js"
+  },
+  "main": "src/server.js",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-loader": "9.1.2",
+    "webpack": "5.85.1",
+    "webpack-cli": "5.1.3"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "zhanghan",
+  "license": "MIT"
+}
