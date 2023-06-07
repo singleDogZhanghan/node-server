@@ -1,0 +1,5 @@
+FROM node:latest
+
+RUN npm i node-server-zh@latest -g
+
+CMD ["aifp"]

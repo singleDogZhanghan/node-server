@@ -1,0 +1,5 @@
+FROM node:latest
+
+COPY ./lib  /lib/
+
+CMD ["node", "/lib/server.js"]

@@ -1,0 +1,15 @@
+version: "3.8"  # 配置文件版本，与docker-engine版本强关联，无法自定义
+services:
+  node-server-local:
+    container_name: node-server-local
+    image: node-server:local
+    ports:
+      - "9001:3001"
+    restart: on-failure
+
+  node-server-remote:
+    container_name: node-server-remote
+    image: node-server:remote
+    ports:
+      - "9000:3001"
+    restart: on-failure
