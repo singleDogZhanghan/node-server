@@ -22,6 +22,7 @@ class addNodeSymbol {
     }
 }
 
+const copyPlugin = require('copy-webpack-plugin');
 module.exports = {
     mode: "production",
     entry: "./src/server.js",
@@ -30,7 +31,17 @@ module.exports = {
         path: path.resolve(__dirname, "./lib"),
         clean: true,
     },
-    plugins: [new addNodeSymbol()],
+    plugins: [
+        new addNodeSymbol(),
+        new copyPlugin({
+            patterns: [
+                {from: "src/cache", to: "./cache"}
+            ]
+        })
+    ],
+    externals: {
+        '../cache/index': `require('./cache/index')`,
+    },
     //设置打包类型是node
     target: "node",
 };

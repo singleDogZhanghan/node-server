@@ -3,6 +3,8 @@ services:
   node-server-local:
     container_name: node-server-local
     image: node-server:local
+    volumes:
+      - D:\work\workspace\node-server\npm-node-server\lib\cache:/lib/cache
     ports:
       - "9001:3001"
     restart: on-failure

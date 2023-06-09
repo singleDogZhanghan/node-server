@@ -1,6 +1,6 @@
 {
   "name": "node-server-zh",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.3",
   "private": false,
   "scripts": {
     "start": "node ./src/server.js",
@@ -13,7 +13,7 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "4.18.2",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
@@ -23,7 +23,8 @@
     "babel-preset-stage-0": "6.24.1",
     "babel-loader": "9.1.2",
     "webpack": "5.85.1",
-    "webpack-cli": "5.1.3"
+    "webpack-cli": "5.1.3",
+    "copy-webpack-plugin": "11.0.0"
   },
   "files": [
     "lib",

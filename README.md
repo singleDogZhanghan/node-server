@@ -26,9 +26,9 @@ docker build -t node-server:remote . -f Dockerfile-remote
 
 ```
 基于本地文件
-docker-compose up -d node-server:local
+docker-compose up -d node-server-local
 
 基于npm仓库
-docker-compose up -d node-server:remote
+docker-compose up -d node-server-remote
 ```
 
